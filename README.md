@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+Esta aplicação  é um desafio passado pelos professores do curso Dev quest, em busca de simular um teste técnico, com o propósito de ver se os alunos conseguem utilizar o que lhes foi ensinado até o momento do curso, mais especificamente na área de react e sua bibliotecas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dentre as funcionalidades da minha aplicação estão uma lista com dez pokemons iniciais, contendo um botão para carregar mais dez até não haver mais pokemons iniciais, ao selecionar um deles você irá ser direcionado para uma pagina dedicada daquele pokemon por meio de navegação interna, ambas páginas contendo um botão de alterar o tema da pagina(escuro/claro), na página dedicada terá informações sobre o pokemon em especifico, como movimentos, tipo, ETC. e também um botão no início da página para retornar à listagem inicial.
 
-## Available Scripts
+A principal ferramenta utilizada para a criação da aplicação é a biblioteca React, uma biblioteca da linguagem de programação JavaScript, esta biblioteca sendo aberta ao público para criar, salvar e disponibilizar códigos, esses códigos são criados por diversos grupos de pessoas pelo mundo para facilitar de fazer ações comuns porém demoradas, então esses grupos criam os códigos e disponibilizam já prontos para uso, assim uma pessoa ao precisar fazer determinada ação instala aquele pacote de códigos em sua aplicação e o utiliza salvando bastante tempo. Dentre os pacotes de códigos utilizados em minha aplicação estão: React Router Dom, utilizado para fazer a navegação interna entre as abas da minha aplicação e Styled Components utilizado para estilizar os componentes da minha aplicação. Estes pacostes foram utilizados para uma melhor separação de funções, pois poderia ser utilizado de outras maneiras estas mesmas funções dentro do código, porém para ficar um código mais limpo e melhor separado eles que foram escolhidos
 
-In the project directory, you can run:
+Agora falando um pouco de minhas decisões durante a criação dessa aplicação, posso citar como principal a criação de uma lista com o id de cada um dos pokemons iniciais de até agora nove gerações, a criação de varias variáveis para estilização dentro dos dois arquivos 'index.js', porém para melhor separação criei um arquivo apenas para a estilização responsiva da aplicação, ETC.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Agora o passo a passo de como rodar a aplicação na sua maquina a partir do repositório do gitHub.
+dentro rorepositório você irá clicar em 'cody', vai na parte escrita 'local', selecione 'HTTPS' e copiará o link abaixo. agora você deve ir até a pasta aonde desejar que fique salvo a aplicação abirirá o terminal nesta pasta e irá digitar 'git clone (e o link copiado anteriormente)', após isso o projeto estará salvo, entre no Projeto pelo VS Code, abra um novo terminal e digite 'npm i' ou 'npm install', deixe carregar e após carregar, novamente no terminal, digite 'npm start', deve abrir automaticamente uma aba em seu navegador caso issso não ocorra, clique em quanto segura no botão do teclado 'control' no link que aparecerá, e então a aplicação já estará rodando

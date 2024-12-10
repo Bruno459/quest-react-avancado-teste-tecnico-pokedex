@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from './contexts/theme-context';
+import { ThemeTogglerButton } from './components/theme-toggler-button/theme-toggler-button';
+import { AppRoutes } from './pages/routes';
+import { ResponsiveStyle } from './styles/responsiveStyles';
+import styled from 'styled-components';
+
+const Font = styled.div`
+  font-family: "Roboto", serif;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Font>
+      <ThemeProvider>
+        <ResponsiveStyle />
+        < ThemeTogglerButton />
+        < AppRoutes />
+      </ThemeProvider>
+    </Font>
+  )
 }
 
 export default App;
